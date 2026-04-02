@@ -1,0 +1,48 @@
+project:
+  name: "AML Transaction Monitoring"
+  version: "1.0.0"
+  author: "Mezemir Neway Guchale"
+
+data:
+  n_transactions: 200000
+  suspicious_rate: 0.03
+  random_state: 42
+  raw_path: "data/raw/transactions.csv"
+  processed_path: "data/processed/transaction_features.csv"
+
+features:
+  velocity_windows: [1, 7, 30]  # days
+  amount_percentiles: [25, 50, 75, 90, 95, 99]
+  time_bins: 24  # hourly bins
+
+models:
+  isolation_forest:
+    n_estimators: 200
+    contamination: 0.03
+    random_state: 42
+  lof:
+    n_neighbors: 20
+    contamination: 0.03
+  dbscan:
+    eps: 0.5
+    min_samples: 10
+  kmeans:
+    n_clusters: 8
+    random_state: 42
+  ensemble:
+    weights:
+      isolation_forest: 0.35
+      lof: 0.25
+      rules: 0.40
+  threshold: 0.5
+
+evaluation:
+  reports_path: "reports/"
+
+visualization:
+  output_dir: "reports/figures/"
+  dpi: 150
+
+logging:
+  level: "INFO"
+  log_file: "logs/aml_monitoring.log"

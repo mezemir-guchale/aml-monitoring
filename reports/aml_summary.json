@@ -1,0 +1,100 @@
+{
+  "total_transactions": 199681,
+  "suspicious_transactions": 5681,
+  "suspicious_rate": 0.02845037835347379,
+  "detection_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "true_positives": 0,
+    "false_positives": 4,
+    "true_negatives": 193996,
+    "false_negatives": 5681,
+    "total_alerts": 4,
+    "total_suspicious": 5681,
+    "alert_rate": 2.0031950961784045e-05
+  },
+  "alert_volume": [
+    {
+      "threshold": 0.1,
+      "n_alerts": 27384,
+      "alert_rate": 0.13713873628437356,
+      "daily_alerts_est": 75.02465753424657
+    },
+    {
+      "threshold": 0.2,
+      "n_alerts": 5446,
+      "alert_rate": 0.027273501234468978,
+      "daily_alerts_est": 14.92054794520548
+    },
+    {
+      "threshold": 0.3,
+      "n_alerts": 421,
+      "alert_rate": 0.0021083628387277707,
+      "daily_alerts_est": 1.1534246575342466
+    },
+    {
+      "threshold": 0.4,
+      "n_alerts": 18,
+      "alert_rate": 9.014377932802821e-05,
+      "daily_alerts_est": 0.049315068493150684
+    },
+    {
+      "threshold": 0.5,
+      "n_alerts": 4,
+      "alert_rate": 2.0031950961784045e-05,
+      "daily_alerts_est": 0.010958904109589041
+    },
+    {
+      "threshold": 0.6,
+      "n_alerts": 1,
+      "alert_rate": 5.007987740446011e-06,
+      "daily_alerts_est": 0.0027397260273972603
+    },
+    {
+      "threshold": 0.7,
+      "n_alerts": 0,
+      "alert_rate": 0.0,
+      "daily_alerts_est": 0.0
+    },
+    {
+      "threshold": 0.8,
+      "n_alerts": 0,
+      "alert_rate": 0.0,
+      "daily_alerts_est": 0.0
+    },
+    {
+      "threshold": 0.9,
+      "n_alerts": 0,
+      "alert_rate": 0.0,
+      "daily_alerts_est": 0.0
+    }
+  ],
+  "pattern_detection": {
+    "total": {
+      "layering": 1197,
+      "rapid_movement": 1334,
+      "round_tripping": 1650,
+      "structuring": 1500
+    },
+    "detected": {
+      "layering": 0,
+      "rapid_movement": 0,
+      "round_tripping": 0,
+      "structuring": 0
+    },
+    "avg_score": {
+      "layering": 0.264513144978918,
+      "rapid_movement": 0.20791117512702514,
+      "round_tripping": 0.25774485480299214,
+      "structuring": 0.13389143540722856
+    },
+    "detection_rate": {
+      "layering": 0.0,
+      "rapid_movement": 0.0,
+      "round_tripping": 0.0,
+      "structuring": 0.0
+    }
+  },
+  "n_clusters": 8
+}
